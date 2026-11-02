@@ -1,0 +1,10 @@
+[
+  {
+    "tokenized_text": ["The", "patient", "takes", "aspirin", "."],
+    "ner": [[3, 3, "medication"]]
+  },
+  {
+    "tokenized_text": ["An", "ultrasound", "was", "requested", "."],
+    "ner": [[1, 1, "procedure"]]
+  }
+]

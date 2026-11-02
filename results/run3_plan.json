@@ -1,0 +1,56 @@
+[
+  {
+    "name": "finetune_run3_b2_lr1.5e-5_ep5",
+    "batch_size": 2,
+    "learning_rate": 1.5e-05,
+    "epochs": 5
+  },
+  {
+    "name": "finetune_run3_b2_lr2e-5_ep5",
+    "batch_size": 2,
+    "learning_rate": 2e-05,
+    "epochs": 5
+  },
+  {
+    "name": "finetune_run3_b2_lr3e-5_ep5",
+    "batch_size": 2,
+    "learning_rate": 3e-05,
+    "epochs": 5
+  },
+  {
+    "name": "finetune_run3_b8_lr3e-5_ep5",
+    "batch_size": 8,
+    "learning_rate": 3e-05,
+    "epochs": 5
+  },
+  {
+    "name": "finetune_run3_b8_lr4e-5_ep5",
+    "batch_size": 8,
+    "learning_rate": 4e-05,
+    "epochs": 5
+  },
+  {
+    "name": "finetune_run3_b8_lr6e-5_ep5",
+    "batch_size": 8,
+    "learning_rate": 6e-05,
+    "epochs": 5
+  },
+  {
+    "name": "finetune_run3_b16_lr4e-5_ep8",
+    "batch_size": 16,
+    "learning_rate": 4e-05,
+    "epochs": 8
+  },
+  {
+    "name": "finetune_run3_b16_lr6e-5_ep8",
+    "batch_size": 16,
+    "learning_rate": 6e-05,
+    "epochs": 8
+  },
+  {
+    "name": "finetune_run3_b16_lr8e-5_ep8",
+    "batch_size": 16,
+    "learning_rate": 8e-05,
+    "epochs": 8
+  }
+]

@@ -1,0 +1,168 @@
+{
+  "full_11": {
+    "overall": {
+      "tp": 248,
+      "fp": 234,
+      "fn": 1072,
+      "support": 1320,
+      "precision": 0.5145228215767634,
+      "recall": 0.18787878787878787,
+      "f1": 0.27524972253052166
+    },
+    "per_label": {
+      "condition": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 120,
+        "support": 120,
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "organization medical facility": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 120,
+        "support": 120,
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "gender identity": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 120,
+        "support": 120,
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "lab result or test finding": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 120,
+        "support": 120,
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "location address": {
+        "tp": 79,
+        "fp": 49,
+        "fn": 41,
+        "support": 120,
+        "precision": 0.6171875,
+        "recall": 0.6583333333333333,
+        "f1": 0.6370967741935484
+      },
+      "medication, drug, or prescription": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 120,
+        "support": 120,
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "name": {
+        "tp": 67,
+        "fp": 179,
+        "fn": 53,
+        "support": 120,
+        "precision": 0.27235772357723576,
+        "recall": 0.5583333333333333,
+        "f1": 0.366120218579235
+      },
+      "medical procedure or test performed": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 120,
+        "support": 120,
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "name medical professional": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 120,
+        "support": 120,
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "sex assigned at birth": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 120,
+        "support": 120,
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "personal identifier number": {
+        "tp": 102,
+        "fp": 6,
+        "fn": 18,
+        "support": 120,
+        "precision": 0.9444444444444444,
+        "recall": 0.85,
+        "f1": 0.8947368421052632
+      }
+    }
+  },
+  "mapped_subset_2": {
+    "overall": {
+      "tp": 181,
+      "fp": 55,
+      "fn": 59,
+      "support": 240,
+      "precision": 0.7669491525423728,
+      "recall": 0.7541666666666667,
+      "f1": 0.7605042016806722
+    },
+    "per_label": {
+      "location address": {
+        "tp": 79,
+        "fp": 49,
+        "fn": 41,
+        "support": 120,
+        "precision": 0.6171875,
+        "recall": 0.6583333333333333,
+        "f1": 0.6370967741935484
+      },
+      "personal identifier number": {
+        "tp": 102,
+        "fp": 6,
+        "fn": 18,
+        "support": 120,
+        "precision": 0.9444444444444444,
+        "recall": 0.85,
+        "f1": 0.8947368421052632
+      }
+    }
+  },
+  "merged_name_diagnostic": {
+    "overall": {
+      "tp": 129,
+      "fp": 117,
+      "fn": 111,
+      "support": 240,
+      "precision": 0.524390243902439,
+      "recall": 0.5375,
+      "f1": 0.5308641975308642
+    },
+    "per_label": {
+      "NAME": {
+        "tp": 129,
+        "fp": 117,
+        "fn": 111,
+        "support": 240,
+        "precision": 0.524390243902439,
+        "recall": 0.5375,
+        "f1": 0.5308641975308642
+      }
+    }
+  },
+  "elapsed_seconds": 128.17266201972961
+}

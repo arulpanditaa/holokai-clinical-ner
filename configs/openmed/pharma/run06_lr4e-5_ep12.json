@@ -1,0 +1,12 @@
+{
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "seed": 42,
+  "batch_size": 1,
+  "epochs": 12,
+  "learning_rate": 4e-05,
+  "gradient_checkpointing": true,
+  "name": "run06_lr4e-5_ep12",
+  "gradient_accumulation_steps": 16,
+  "max_grad_norm": 1
+}

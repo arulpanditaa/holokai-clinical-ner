@@ -1,0 +1,23 @@
+{
+  "experiment": "B22_wd010_seed42",
+  "weight_decay": 0.1,
+  "seed": 42,
+  "learning_rate": 0.00012,
+  "batch_size": 16,
+  "epochs": 8,
+  "best_eval_epoch": 7.368421,
+  "best_val_f1": 0.8950749465,
+  "best_val_precision": 0.869022869,
+  "best_val_recall": 0.9227373068,
+  "best_val_tp": 418,
+  "best_val_fp": 63,
+  "best_val_fn": 35,
+  "final_val_f1": 0.88794926,
+  "environment": {
+    "gliner": "0.2.29",
+    "transformers": "4.51.3",
+    "torch": "2.11.0+cu130",
+    "accelerate": "1.15.0"
+  },
+  "comparison_note": "Same seed and environment as WD=0.00, WD=0.01, and WD=0.05 experiments."
+}

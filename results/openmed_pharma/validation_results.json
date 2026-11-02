@@ -1,0 +1,160 @@
+{
+  "group": "run06_lr4e-5_ep12",
+  "best_epoch": 4,
+  "metrics": {
+    "overall": {
+      "precision": 0.8614457831325302,
+      "recall": 0.9470198675496688,
+      "f1": 0.9022082018927445,
+      "tp": 429,
+      "fp": 69,
+      "fn": 24,
+      "support": 453
+    },
+    "per_label": {
+      "DIAGNOSIS": {
+        "precision": 0.8461538461538461,
+        "recall": 0.9850746268656716,
+        "f1": 0.9103448275862069,
+        "tp": 66,
+        "fp": 12,
+        "fn": 1,
+        "support": 67
+      },
+      "FACILITY": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 9,
+        "fp": 0,
+        "fn": 0,
+        "support": 9
+      },
+      "GENDER_IDENTITY": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 24,
+        "fp": 0,
+        "fn": 0,
+        "support": 24
+      },
+      "LAB_RESULT": {
+        "precision": 0.6949152542372882,
+        "recall": 0.9318181818181818,
+        "f1": 0.7961165048543689,
+        "tp": 41,
+        "fp": 18,
+        "fn": 3,
+        "support": 44
+      },
+      "LOCATION_ADDRESS": {
+        "precision": 0.8695652173913043,
+        "recall": 0.9090909090909091,
+        "f1": 0.8888888888888888,
+        "tp": 20,
+        "fp": 3,
+        "fn": 2,
+        "support": 22
+      },
+      "MEDICATION": {
+        "precision": 0.8153846153846154,
+        "recall": 0.8983050847457628,
+        "f1": 0.8548387096774194,
+        "tp": 53,
+        "fp": 12,
+        "fn": 6,
+        "support": 59
+      },
+      "PERSON": {
+        "precision": 0.9459459459459459,
+        "recall": 0.9722222222222222,
+        "f1": 0.958904109589041,
+        "tp": 70,
+        "fp": 4,
+        "fn": 2,
+        "support": 72
+      },
+      "PROCEDURE": {
+        "precision": 0.7746478873239436,
+        "recall": 0.9166666666666666,
+        "f1": 0.8396946564885496,
+        "tp": 55,
+        "fp": 16,
+        "fn": 5,
+        "support": 60
+      },
+      "PROVIDER": {
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1": 0.9473684210526315,
+        "tp": 27,
+        "fp": 0,
+        "fn": 3,
+        "support": 30
+      },
+      "SEX": {
+        "precision": 0.875,
+        "recall": 1.0,
+        "f1": 0.9333333333333333,
+        "tp": 21,
+        "fp": 3,
+        "fn": 0,
+        "support": 21
+      },
+      "UNIQUE_ID": {
+        "precision": 0.9772727272727273,
+        "recall": 0.9555555555555556,
+        "f1": 0.9662921348314607,
+        "tp": 43,
+        "fp": 1,
+        "fn": 2,
+        "support": 45
+      }
+    }
+  },
+  "configuration": {
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "seed": 42,
+    "batch_size": 1,
+    "epochs": 12,
+    "learning_rate": 4e-05,
+    "gradient_checkpointing": true,
+    "name": "run06_lr4e-5_ep12",
+    "gradient_accumulation_steps": 16,
+    "max_grad_norm": 1,
+    "model_id": "OpenMed/OpenMed-NER-PharmaDetect-SuperClinical-434M",
+    "model_revision": "d4259d05b0e924ad786f5c342ddedf46fe956331",
+    "precision": "bf16",
+    "scheduler": "linear",
+    "optimizer": "AdamW",
+    "train_data": "/content/drive/MyDrive/Holokai_Project/week9/OpenMed-NER-PharmaDetect-SuperClinical-434M/data/prepared/train.jsonl",
+    "validation_data": "/content/drive/MyDrive/Holokai_Project/week9/OpenMed-NER-PharmaDetect-SuperClinical-434M/data/prepared/validation.jsonl",
+    "effective_batch_size": 16,
+    "torch_version": "2.11.0+cu130",
+    "transformers_version": "4.51.3",
+    "tuning_reason": "Best run run05_lr4e-5_ep8 peaked late (7/8); test a longer 12-epoch schedule at the same learning rate."
+  },
+  "data_sha256": {
+    "train": "a1854282593ae230692cb79d35c0152692b54cde5680466bcb24229a9cdb1a21",
+    "validation": "e1392eb66a6a7757b291c6e973109729b8a1ca515351f96e6605d7abb62d481d"
+  },
+  "preparation_settings": {
+    "max_length": 512,
+    "includes_special_tokens": true,
+    "subtoken_supervision": "first_only",
+    "ignore_index": -100,
+    "padding": false,
+    "truncation": false,
+    "chunking": "nonoverlapping_token_boundaries_move_before_entities",
+    "chunking_uses_gold_entity_boundaries": true,
+    "overlaps_duplicates_unknown_labels": "reject",
+    "oversize_entity_or_token": "reject_without_truncation",
+    "v4_policy": "held_out_integrity_only_no_decision_tuning"
+  },
+  "selection_metric": "validation_entity_exact_match_micro_f1",
+  "tie_policy": "earlier_epoch_then_configuration_order",
+  "completed": false,
+  "global_improvement": 0.004553617670996157
+}

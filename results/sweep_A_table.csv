@@ -1,0 +1,7 @@
+run,learning_rate,epochs,epoch-1_f1,epoch-2_f1,epoch-3_f1,epoch-4_f1,epoch-5_f1,final_model_f1,selected,best_val_f1,best_val_precision,best_val_recall,flat_ner_val_f1,calibrated_val_f1,v4_f1
+finetune_sweep_A1_lr5e-6_ep5,5e-06,5,72.78,73.6,77.15,78.81,78.42,78.42,epoch-4,78.81,69.66,90.73,79.92,85.68,78.61
+finetune_sweep_A2_lr1e-5_ep5,1e-05,5,78.1,77.26,79.36,82.78,81.6,81.6,epoch-4,82.78,74.34,93.38,84.22,88.36,82.68
+finetune_sweep_A3_lr2e-5_ep5,2e-05,5,75.16,80.75,85.8,85.69,85.03,85.03,epoch-3,85.8,78.89,94.04,86.6,88.82,83.87
+finetune_sweep_A4_lr3e-5_ep5,3e-05,5,72.78,82.63,81.18,87.27,86.11,86.11,epoch-4,87.27,81.57,93.82,88.56,90.77,88.38
+finetune_sweep_A5_lr4e-5_ep5,4e-05,5,66.77,79.58,81.6,88.77,84.84,84.84,epoch-4,88.77,83.2,95.14,90.15,91.58,86.47
+finetune_sweep_A6_lr5e-5_ep5,5e-05,5,66.19,80.87,85.07,88.47,88.05,88.05,epoch-4,88.47,83.53,94.04,88.51,91.15,87.63

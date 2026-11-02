@@ -1,0 +1,120 @@
+{
+  "selected_group": "learning_rate_5e-5",
+  "selected_epoch": 8,
+  "validation_micro_f1": 0.9067796610169492,
+  "v4_metrics": {
+    "overall": {
+      "precision": 0.8470839260312945,
+      "recall": 0.9022727272727272,
+      "f1": 0.8738077769625825,
+      "tp": 1191,
+      "fp": 215,
+      "fn": 129,
+      "support": 1320
+    },
+    "per_label": {
+      "DIAGNOSIS": {
+        "precision": 0.753731343283582,
+        "recall": 0.8416666666666667,
+        "f1": 0.7952755905511811,
+        "tp": 101,
+        "fp": 33,
+        "fn": 19,
+        "support": 120
+      },
+      "FACILITY": {
+        "precision": 0.896,
+        "recall": 0.9333333333333333,
+        "f1": 0.9142857142857143,
+        "tp": 112,
+        "fp": 13,
+        "fn": 8,
+        "support": 120
+      },
+      "GENDER_IDENTITY": {
+        "precision": 0.8429752066115702,
+        "recall": 0.85,
+        "f1": 0.8464730290456431,
+        "tp": 102,
+        "fp": 19,
+        "fn": 18,
+        "support": 120
+      },
+      "LAB_RESULT": {
+        "precision": 0.8629032258064516,
+        "recall": 0.8916666666666667,
+        "f1": 0.8770491803278688,
+        "tp": 107,
+        "fp": 17,
+        "fn": 13,
+        "support": 120
+      },
+      "LOCATION_ADDRESS": {
+        "precision": 0.7894736842105263,
+        "recall": 0.875,
+        "f1": 0.8300395256916996,
+        "tp": 105,
+        "fp": 28,
+        "fn": 15,
+        "support": 120
+      },
+      "MEDICATION": {
+        "precision": 0.8015267175572519,
+        "recall": 0.875,
+        "f1": 0.8366533864541833,
+        "tp": 105,
+        "fp": 26,
+        "fn": 15,
+        "support": 120
+      },
+      "PERSON": {
+        "precision": 0.9296875,
+        "recall": 0.9916666666666667,
+        "f1": 0.9596774193548387,
+        "tp": 119,
+        "fp": 9,
+        "fn": 1,
+        "support": 120
+      },
+      "PROCEDURE": {
+        "precision": 0.6304347826086957,
+        "recall": 0.725,
+        "f1": 0.6744186046511628,
+        "tp": 87,
+        "fp": 51,
+        "fn": 33,
+        "support": 120
+      },
+      "PROVIDER": {
+        "precision": 0.9754098360655737,
+        "recall": 0.9916666666666667,
+        "f1": 0.9834710743801653,
+        "tp": 119,
+        "fp": 3,
+        "fn": 1,
+        "support": 120
+      },
+      "SEX": {
+        "precision": 0.928,
+        "recall": 0.9666666666666667,
+        "f1": 0.9469387755102041,
+        "tp": 116,
+        "fp": 9,
+        "fn": 4,
+        "support": 120
+      },
+      "UNIQUE_ID": {
+        "precision": 0.944,
+        "recall": 0.9833333333333333,
+        "f1": 0.963265306122449,
+        "tp": 118,
+        "fp": 7,
+        "fn": 2,
+        "support": 120
+      }
+    }
+  },
+  "v4_sha256": "ca8d6c2d4412495d41bd28784884c15099a2292f788858312446a58ebd384e14",
+  "model_dir": "/content/drive/.shortcut-targets-by-id/18HECtRr129LmvvOOrUGTKuaf6Y1HVCDE/Holokai_Project/week9/OpenMed-NER-DiseaseDetect-SuperClinical-184M/outputs/learning_rate_5e-5/best_model",
+  "policy": "selected on validation only; V4 scored once"
+}

@@ -1,0 +1,23 @@
+{
+  "experiment": "B22_wd001_seed42",
+  "weight_decay": 0.01,
+  "seed": 42,
+  "learning_rate": 0.00012,
+  "batch_size": 16,
+  "epochs": 8,
+  "best_eval_epoch": 7.368421,
+  "best_val_f1": 0.8807531381,
+  "best_val_precision": 0.8369781312,
+  "best_val_recall": 0.9293598234,
+  "best_val_tp": 421,
+  "best_val_fp": 82,
+  "best_val_fn": 32,
+  "final_val_f1": 0.8731808732,
+  "environment": {
+    "gliner": "0.2.29",
+    "transformers": "4.51.3",
+    "torch": "2.11.0+cu130",
+    "accelerate": "1.15.0"
+  },
+  "comparison_note": "Replicated B22 baseline in the same environment as the WD=0.00 experiment."
+}

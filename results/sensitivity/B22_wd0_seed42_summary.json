@@ -1,0 +1,23 @@
+{
+  "experiment": "B22_wd0_seed42",
+  "weight_decay": 0.0,
+  "seed": 42,
+  "learning_rate": 0.00012,
+  "batch_size": 16,
+  "epochs": 8,
+  "best_eval_epoch": 7.368421,
+  "best_val_f1": 0.8729166667,
+  "best_val_precision": 0.8264299803,
+  "best_val_recall": 0.9249448124,
+  "best_val_tp": 419,
+  "best_val_fp": 88,
+  "best_val_fn": 34,
+  "final_val_f1": 0.8665297741,
+  "environment": {
+    "gliner": "0.2.29",
+    "transformers": "4.51.3",
+    "torch": "2.11.0+cu130",
+    "accelerate": "1.15.0"
+  },
+  "comparison_note": "Original B22 WD=0.01 baseline was trained in a different environment."
+}

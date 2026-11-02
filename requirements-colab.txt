@@ -1,0 +1,12 @@
+# Colab: use the runtime's preinstalled CUDA-compatible PyTorch.
+# NumPy is resolved by the dependencies; do not apply the local NumPy 1.x pin.
+gliner==0.2.29
+transformers==4.51.3
+tokenizers==0.21.1
+huggingface-hub==0.30.2
+safetensors==0.5.3
+sentencepiece==0.2.1
+accelerate==1.6.0
+datasets==3.6.0
+PyYAML==6.0.2
+tqdm==4.67.1

@@ -1,0 +1,15 @@
+# Use Python 3.10 or 3.11. PyTorch 2.2.2 is the last Intel macOS wheel.
+torch==2.2.2 ; sys_platform == "darwin" and platform_machine == "x86_64"
+torch==2.6.0 ; sys_platform != "darwin" or platform_machine != "x86_64"
+gliner==0.2.29
+transformers==4.51.3
+tokenizers==0.21.1
+huggingface-hub==0.30.2
+safetensors==0.5.3
+sentencepiece==0.2.0
+numpy==1.26.4
+accelerate==1.6.0
+datasets==3.6.0
+scikit-learn==1.6.1
+PyYAML==6.0.2
+tqdm==4.67.1

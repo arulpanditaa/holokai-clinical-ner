@@ -1,0 +1,158 @@
+{
+  "group": "learning_rate_5e-5",
+  "best_epoch": 8,
+  "metrics": {
+    "overall": {
+      "precision": 0.8716904276985743,
+      "recall": 0.9448123620309051,
+      "f1": 0.9067796610169492,
+      "tp": 428,
+      "fp": 63,
+      "fn": 25,
+      "support": 453
+    },
+    "per_label": {
+      "DIAGNOSIS": {
+        "precision": 0.8205128205128205,
+        "recall": 0.9552238805970149,
+        "f1": 0.8827586206896552,
+        "tp": 64,
+        "fp": 14,
+        "fn": 3,
+        "support": 67
+      },
+      "FACILITY": {
+        "precision": 0.8888888888888888,
+        "recall": 0.8888888888888888,
+        "f1": 0.8888888888888888,
+        "tp": 8,
+        "fp": 1,
+        "fn": 1,
+        "support": 9
+      },
+      "GENDER_IDENTITY": {
+        "precision": 0.9230769230769231,
+        "recall": 1.0,
+        "f1": 0.96,
+        "tp": 24,
+        "fp": 2,
+        "fn": 0,
+        "support": 24
+      },
+      "LAB_RESULT": {
+        "precision": 0.7454545454545455,
+        "recall": 0.9318181818181818,
+        "f1": 0.8282828282828283,
+        "tp": 41,
+        "fp": 14,
+        "fn": 3,
+        "support": 44
+      },
+      "LOCATION_ADDRESS": {
+        "precision": 0.8333333333333334,
+        "recall": 0.9090909090909091,
+        "f1": 0.8695652173913043,
+        "tp": 20,
+        "fp": 4,
+        "fn": 2,
+        "support": 22
+      },
+      "MEDICATION": {
+        "precision": 0.8666666666666667,
+        "recall": 0.8813559322033898,
+        "f1": 0.8739495798319328,
+        "tp": 52,
+        "fp": 8,
+        "fn": 7,
+        "support": 59
+      },
+      "PERSON": {
+        "precision": 0.9863013698630136,
+        "recall": 1.0,
+        "f1": 0.993103448275862,
+        "tp": 72,
+        "fp": 1,
+        "fn": 0,
+        "support": 72
+      },
+      "PROCEDURE": {
+        "precision": 0.7714285714285715,
+        "recall": 0.9,
+        "f1": 0.8307692307692308,
+        "tp": 54,
+        "fp": 16,
+        "fn": 6,
+        "support": 60
+      },
+      "PROVIDER": {
+        "precision": 1.0,
+        "recall": 0.9666666666666667,
+        "f1": 0.9830508474576272,
+        "tp": 29,
+        "fp": 0,
+        "fn": 1,
+        "support": 30
+      },
+      "SEX": {
+        "precision": 0.9545454545454546,
+        "recall": 1.0,
+        "f1": 0.9767441860465116,
+        "tp": 21,
+        "fp": 1,
+        "fn": 0,
+        "support": 21
+      },
+      "UNIQUE_ID": {
+        "precision": 0.9555555555555556,
+        "recall": 0.9555555555555556,
+        "f1": 0.9555555555555556,
+        "tp": 43,
+        "fp": 2,
+        "fn": 2,
+        "support": 45
+      }
+    }
+  },
+  "configuration": {
+    "name": "learning_rate_5e-5",
+    "learning_rate": 5e-05,
+    "epochs": 8,
+    "seed": 42,
+    "batch_size": 4,
+    "gradient_accumulation_steps": 4,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "max_grad_norm": 1,
+    "gradient_checkpointing": true,
+    "model_id": "OpenMed/OpenMed-NER-DiseaseDetect-SuperClinical-184M",
+    "model_revision": "1d72b9a9bf3e755fef613337a7d6b17e1b7ef48f",
+    "precision": "bf16",
+    "scheduler": "linear",
+    "optimizer": "AdamW",
+    "train_data": "/content/drive/.shortcut-targets-by-id/18HECtRr129LmvvOOrUGTKuaf6Y1HVCDE/Holokai_Project/week9/OpenMed-NER-DiseaseDetect-SuperClinical-184M/data/prepared/train.jsonl",
+    "validation_data": "/content/drive/.shortcut-targets-by-id/18HECtRr129LmvvOOrUGTKuaf6Y1HVCDE/Holokai_Project/week9/OpenMed-NER-DiseaseDetect-SuperClinical-184M/data/prepared/validation.jsonl",
+    "effective_batch_size": 16,
+    "torch_version": "2.11.0+cu130",
+    "transformers_version": "4.51.3"
+  },
+  "data_sha256": {
+    "train": "fc9c571a852abe5f1cb839deb75d2ae70df44c28b222b1da68ce9ff6b335fc3a",
+    "validation": "9569c7f43b1f3260ec58f939b789fbb2113205589769af232471a1e3fe69965b"
+  },
+  "preparation_settings": {
+    "max_length": 512,
+    "includes_special_tokens": true,
+    "subtoken_supervision": "first_only",
+    "ignore_index": -100,
+    "padding": false,
+    "truncation": false,
+    "chunking": "nonoverlapping_token_boundaries_move_before_entities",
+    "chunking_uses_gold_entity_boundaries": true,
+    "overlaps_duplicates_unknown_labels": "reject",
+    "oversize_entity_or_token": "reject_without_truncation",
+    "v4_policy": "held_out_integrity_only_no_decision_tuning"
+  },
+  "selection_metric": "validation_entity_exact_match_micro_f1",
+  "tie_policy": "earlier_epoch_then_configuration_order",
+  "completed": true
+}

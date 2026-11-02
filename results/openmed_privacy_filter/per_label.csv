@@ -1,0 +1,12 @@
+label,tp,fp,fn,support,precision,recall,f1
+condition,0,0,120,120,0,0.0,0.0
+organization medical facility,0,0,120,120,0,0.0,0.0
+gender identity,0,0,120,120,0,0.0,0.0
+lab result or test finding,0,0,120,120,0,0.0,0.0
+location address,79,49,41,120,0.6171875,0.6583333333333333,0.6370967741935484
+"medication, drug, or prescription",0,0,120,120,0,0.0,0.0
+name,67,179,53,120,0.27235772357723576,0.5583333333333333,0.366120218579235
+medical procedure or test performed,0,0,120,120,0,0.0,0.0
+name medical professional,0,0,120,120,0,0.0,0.0
+sex assigned at birth,0,0,120,120,0,0.0,0.0
+personal identifier number,102,6,18,120,0.9444444444444444,0.85,0.8947368421052632

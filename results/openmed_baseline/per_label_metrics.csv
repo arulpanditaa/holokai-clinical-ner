@@ -1,0 +1,13 @@
+label,coverage,precision,recall,f1,tp,fp,fn
+overall_micro_all_11,4/11 partial,0.6029411764705882,0.2411764705882353,0.3445378151260504,123,81,387
+condition,unsupported,0.0,0.0,0.0,0,0,120
+organization medical facility,unsupported,0.0,0.0,0.0,0,0,9
+gender identity,unsupported,0.0,0.0,0.0,0,0,24
+lab result or test finding,partial,1.0,0.1956521739130435,0.32727272727272727,9,0,37
+location address,partial,0.25,0.5909090909090909,0.35135135135135137,13,39,9
+"medication, drug, or prescription",unsupported,0.0,0.0,0.0,0,0,59
+name,partial,0.6320754716981132,0.9305555555555556,0.7528089887640449,67,39,5
+medical procedure or test performed,unsupported,0.0,0.0,0.0,0,0,62
+name medical professional,unsupported,0.0,0.0,0.0,0,0,30
+sex assigned at birth,unsupported,0.0,0.0,0.0,0,0,21
+personal identifier number,partial,0.918918918918919,0.7555555555555555,0.8292682926829268,34,3,11

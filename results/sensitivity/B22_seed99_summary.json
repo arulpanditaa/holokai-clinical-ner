@@ -1,0 +1,15 @@
+{
+  "experiment": "B22_seed99",
+  "seed": 99,
+  "learning_rate": 0.00012,
+  "batch_size": 16,
+  "epochs": 8,
+  "weight_decay": 0.01,
+  "best_evaluation_epoch": 8.0,
+  "best_validation_f1": 0.8919202518363064,
+  "best_validation_precision": 0.85,
+  "best_validation_recall": 0.9381898454746137,
+  "best_validation_tp": 425,
+  "best_validation_fp": 75,
+  "best_validation_fn": 28
+}

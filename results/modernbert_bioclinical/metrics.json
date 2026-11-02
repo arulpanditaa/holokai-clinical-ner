@@ -1,0 +1,451 @@
+{
+  "model_id": "thomas-sounack/BioClinical-ModernBERT-large",
+  "revision": "c684f470c2ee60531d8c47c32187dba746c84201",
+  "labels": [
+    "condition",
+    "organization medical facility",
+    "gender identity",
+    "lab result or test finding",
+    "location address",
+    "medication, drug, or prescription",
+    "name",
+    "medical procedure or test performed",
+    "name medical professional",
+    "sex assigned at birth",
+    "personal identifier number"
+  ],
+  "tags": [
+    "O",
+    "B-condition",
+    "I-condition",
+    "B-organization medical facility",
+    "I-organization medical facility",
+    "B-gender identity",
+    "I-gender identity",
+    "B-lab result or test finding",
+    "I-lab result or test finding",
+    "B-location address",
+    "I-location address",
+    "B-medication, drug, or prescription",
+    "I-medication, drug, or prescription",
+    "B-name",
+    "I-name",
+    "B-medical procedure or test performed",
+    "I-medical procedure or test performed",
+    "B-name medical professional",
+    "I-name medical professional",
+    "B-sex assigned at birth",
+    "I-sex assigned at birth",
+    "B-personal identifier number",
+    "I-personal identifier number"
+  ],
+  "annotation_status": "Option B automated, unverified additions",
+  "hyperparameters": {
+    "lr": 0.001,
+    "seed": 42,
+    "epochs": 10,
+    "batch_size": 8,
+    "optimizer": "AdamW",
+    "weight_decay": 0.0,
+    "max_grad_norm": 1.0,
+    "precision": "float32"
+  },
+  "head_initial_weight_sha256": "93c364f00446b28d7e2b401c7816c320d5892aa625e949586089a43a36b006ad",
+  "encoder_frozen_verified": true,
+  "selected_epoch": 8,
+  "selection_metric": "validation exact-span micro F1",
+  "data": {
+    "train": {
+      "path": "/content/drive/MyDrive/Holokai_Project/week8/Holokai_Option_B_Annotation_Files/train_gliner_mapping_option_B.json",
+      "sha256": "e82d2508452148f36362512a383e928c2b3b2d3b8a09df15ae96a009390333d2",
+      "records": 1509
+    },
+    "validation": {
+      "path": "/content/drive/MyDrive/Holokai_Project/week8/Holokai_Option_B_Annotation_Files/val_gliner_mapping_option_B.json",
+      "sha256": "ce5f2be09715281f08abff6c9d464c967e9530e0bd877fcfc0da50a39253c146",
+      "records": 171
+    },
+    "v4": {
+      "path": "/content/drive/MyDrive/Holokai_Project/week8/Holokai_Option_B_Annotation_Files/corpus_V4_gliner_mapping_option_B.json",
+      "sha256": "0687a04a5437d236680ca4432578ab8587c318f6d6eed37dc4eac0d628b63fed",
+      "records": 648
+    }
+  },
+  "max_subtokens": {
+    "train": 312,
+    "validation": 193,
+    "v4": 269
+  },
+  "environment": {
+    "torch": "2.11.0+cu130",
+    "transformers": "4.53.3",
+    "numpy": "2.1.3",
+    "onnx": "1.18.0",
+    "onnxruntime": "1.22.1"
+  },
+  "gpu": "NVIDIA L4",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.4355532250497485,
+      "validation": {
+        "tp": 256,
+        "fp": 301,
+        "fn": 254,
+        "precision": 0.45960502692998206,
+        "recall": 0.5019607843137255,
+        "f1": 0.47985004686035615
+      }
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.21403609280592073,
+      "validation": {
+        "tp": 264,
+        "fp": 309,
+        "fn": 246,
+        "precision": 0.4607329842931937,
+        "recall": 0.5176470588235295,
+        "f1": 0.48753462603878117
+      }
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.18489227841541805,
+      "validation": {
+        "tp": 285,
+        "fp": 327,
+        "fn": 225,
+        "precision": 0.46568627450980393,
+        "recall": 0.5588235294117647,
+        "f1": 0.5080213903743316
+      }
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.16555434555791218,
+      "validation": {
+        "tp": 306,
+        "fp": 309,
+        "fn": 204,
+        "precision": 0.4975609756097561,
+        "recall": 0.6,
+        "f1": 0.544
+      }
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.15540432506457835,
+      "validation": {
+        "tp": 289,
+        "fp": 275,
+        "fn": 221,
+        "precision": 0.5124113475177305,
+        "recall": 0.5666666666666667,
+        "f1": 0.5381750465549349
+      }
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.14565298879098754,
+      "validation": {
+        "tp": 323,
+        "fp": 340,
+        "fn": 187,
+        "precision": 0.48717948717948717,
+        "recall": 0.6333333333333333,
+        "f1": 0.5507246376811594
+      }
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.13706589742717967,
+      "validation": {
+        "tp": 292,
+        "fp": 304,
+        "fn": 218,
+        "precision": 0.4899328859060403,
+        "recall": 0.5725490196078431,
+        "f1": 0.5280289330922242
+      }
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.13356743850864733,
+      "validation": {
+        "tp": 313,
+        "fp": 279,
+        "fn": 197,
+        "precision": 0.5287162162162162,
+        "recall": 0.6137254901960785,
+        "f1": 0.5680580762250453
+      }
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.1267077442406226,
+      "validation": {
+        "tp": 314,
+        "fp": 312,
+        "fn": 196,
+        "precision": 0.5015974440894568,
+        "recall": 0.615686274509804,
+        "f1": 0.5528169014084507
+      }
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.12135712542076159,
+      "validation": {
+        "tp": 304,
+        "fp": 279,
+        "fn": 206,
+        "precision": 0.5214408233276158,
+        "recall": 0.596078431372549,
+        "f1": 0.5562671546203111
+      }
+    }
+  ],
+  "validation": {
+    "overall": {
+      "tp": 313,
+      "fp": 279,
+      "fn": 197,
+      "precision": 0.5287162162162162,
+      "recall": 0.6137254901960785,
+      "f1": 0.5680580762250453
+    },
+    "per_label": {
+      "condition": {
+        "tp": 62,
+        "fp": 61,
+        "fn": 58,
+        "precision": 0.5040650406504065,
+        "recall": 0.5166666666666667,
+        "f1": 0.5102880658436214
+      },
+      "organization medical facility": {
+        "tp": 4,
+        "fp": 5,
+        "fn": 5,
+        "precision": 0.4444444444444444,
+        "recall": 0.4444444444444444,
+        "f1": 0.4444444444444444
+      },
+      "gender identity": {
+        "tp": 22,
+        "fp": 3,
+        "fn": 2,
+        "precision": 0.88,
+        "recall": 0.9166666666666666,
+        "f1": 0.8979591836734694
+      },
+      "lab result or test finding": {
+        "tp": 20,
+        "fp": 42,
+        "fn": 26,
+        "precision": 0.3225806451612903,
+        "recall": 0.43478260869565216,
+        "f1": 0.37037037037037035
+      },
+      "location address": {
+        "tp": 10,
+        "fp": 33,
+        "fn": 12,
+        "precision": 0.23255813953488372,
+        "recall": 0.45454545454545453,
+        "f1": 0.3076923076923077
+      },
+      "medication, drug, or prescription": {
+        "tp": 32,
+        "fp": 42,
+        "fn": 27,
+        "precision": 0.43243243243243246,
+        "recall": 0.5423728813559322,
+        "f1": 0.48120300751879697
+      },
+      "name": {
+        "tp": 58,
+        "fp": 27,
+        "fn": 14,
+        "precision": 0.6823529411764706,
+        "recall": 0.8055555555555556,
+        "f1": 0.7388535031847133
+      },
+      "medical procedure or test performed": {
+        "tp": 24,
+        "fp": 41,
+        "fn": 38,
+        "precision": 0.36923076923076925,
+        "recall": 0.3870967741935484,
+        "f1": 0.3779527559055118
+      },
+      "name medical professional": {
+        "tp": 19,
+        "fp": 19,
+        "fn": 11,
+        "precision": 0.5,
+        "recall": 0.6333333333333333,
+        "f1": 0.5588235294117647
+      },
+      "sex assigned at birth": {
+        "tp": 21,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.9545454545454546,
+        "recall": 1.0,
+        "f1": 0.9767441860465116
+      },
+      "personal identifier number": {
+        "tp": 41,
+        "fp": 5,
+        "fn": 4,
+        "precision": 0.8913043478260869,
+        "recall": 0.9111111111111111,
+        "f1": 0.9010989010989011
+      }
+    }
+  },
+  "v4": {
+    "overall": {
+      "tp": 830,
+      "fp": 967,
+      "fn": 583,
+      "precision": 0.46188091263216474,
+      "recall": 0.5874026893135174,
+      "f1": 0.5171339563862928
+    },
+    "per_label": {
+      "condition": {
+        "tp": 99,
+        "fp": 112,
+        "fn": 106,
+        "precision": 0.46919431279620855,
+        "recall": 0.48292682926829267,
+        "f1": 0.47596153846153844
+      },
+      "organization medical facility": {
+        "tp": 45,
+        "fp": 106,
+        "fn": 75,
+        "precision": 0.2980132450331126,
+        "recall": 0.375,
+        "f1": 0.33210332103321033
+      },
+      "gender identity": {
+        "tp": 83,
+        "fp": 49,
+        "fn": 37,
+        "precision": 0.6287878787878788,
+        "recall": 0.6916666666666667,
+        "f1": 0.6587301587301587
+      },
+      "lab result or test finding": {
+        "tp": 73,
+        "fp": 64,
+        "fn": 51,
+        "precision": 0.5328467153284672,
+        "recall": 0.5887096774193549,
+        "f1": 0.5593869731800766
+      },
+      "location address": {
+        "tp": 38,
+        "fp": 199,
+        "fn": 82,
+        "precision": 0.16033755274261605,
+        "recall": 0.31666666666666665,
+        "f1": 0.21288515406162464
+      },
+      "medication, drug, or prescription": {
+        "tp": 74,
+        "fp": 85,
+        "fn": 46,
+        "precision": 0.46540880503144655,
+        "recall": 0.6166666666666667,
+        "f1": 0.5304659498207885
+      },
+      "name": {
+        "tp": 88,
+        "fp": 84,
+        "fn": 32,
+        "precision": 0.5116279069767442,
+        "recall": 0.7333333333333333,
+        "f1": 0.6027397260273972
+      },
+      "medical procedure or test performed": {
+        "tp": 31,
+        "fp": 155,
+        "fn": 93,
+        "precision": 0.16666666666666666,
+        "recall": 0.25,
+        "f1": 0.2
+      },
+      "name medical professional": {
+        "tp": 78,
+        "fp": 75,
+        "fn": 42,
+        "precision": 0.5098039215686274,
+        "recall": 0.65,
+        "f1": 0.5714285714285714
+      },
+      "sex assigned at birth": {
+        "tp": 112,
+        "fp": 3,
+        "fn": 8,
+        "precision": 0.9739130434782609,
+        "recall": 0.9333333333333333,
+        "f1": 0.9531914893617022
+      },
+      "personal identifier number": {
+        "tp": 109,
+        "fp": 35,
+        "fn": 11,
+        "precision": 0.7569444444444444,
+        "recall": 0.9083333333333333,
+        "f1": 0.8257575757575758
+      }
+    }
+  },
+  "onnx": {
+    "verified": true,
+    "opset": 17,
+    "provider": "CPUExecutionProvider",
+    "precision": "float32",
+    "atol": 0.001,
+    "rtol": 0.001,
+    "checks": [
+      {
+        "batch_size": 1,
+        "sequence_length": 14,
+        "records": [
+          28
+        ],
+        "max_abs_error": 2.86102294921875e-05,
+        "tags_and_entities_identical": true
+      },
+      {
+        "batch_size": 2,
+        "sequence_length": 193,
+        "records": [
+          28,
+          119
+        ],
+        "max_abs_error": 6.008148193359375e-05,
+        "tags_and_entities_identical": true
+      },
+      {
+        "batch_size": 3,
+        "sequence_length": 176,
+        "records": [
+          92,
+          58,
+          45
+        ],
+        "max_abs_error": 0.0002636909484863281,
+        "tags_and_entities_identical": true
+      }
+    ],
+    "sha256": "5db2a9a31ba25306862babc101d3c836a3ce068c13d2e5455ddd9dd7fc09ad2c",
+    "bytes": 1579988077
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "train": {
+    "records": 1509,
+    "original_annotations": 3947,
+    "added": 631,
+    "by_category": {
+      "other_vital_signs": 69,
+      "blood_pressure": 19,
+      "symptoms_signs": 517,
+      "physical_exam_assessment": 19,
+      "counseling_education": 7
+    },
+    "new_total": 4578,
+    "skipped_due_to_context_guards": {
+      "negated_or_hypothetical": 253
+    },
+    "source_sha256": "5102147fa08cc649dd9a966787768887f3d100a096d003e63a620e7ed3424f85"
+  },
+  "validation": {
+    "records": 171,
+    "original_annotations": 453,
+    "added": 57,
+    "by_category": {
+      "symptoms_signs": 53,
+      "physical_exam_assessment": 2,
+      "other_vital_signs": 1,
+      "blood_pressure": 1
+    },
+    "new_total": 510,
+    "skipped_due_to_context_guards": {
+      "negated_or_hypothetical": 32
+    },
+    "source_sha256": "f6f683869394e18a45a39eef555270b60859f4b6f1826b30079172b090aef7bb"
+  },
+  "V4_test": {
+    "records": 648,
+    "original_annotations": 1320,
+    "added": 93,
+    "by_category": {
+      "counseling_education": 2,
+      "symptoms_signs": 85,
+      "physical_exam_assessment": 2,
+      "blood_pressure": 1,
+      "other_vital_signs": 3
+    },
+    "new_total": 1413,
+    "skipped_due_to_context_guards": {
+      "negated_or_hypothetical": 34
+    },
+    "source_sha256": "ba40da69601298e626a3e748640bf1787c541b56a63871161e4e2044bda39be6"
+  }
+}

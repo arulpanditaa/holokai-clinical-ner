@@ -1,0 +1,170 @@
+{
+  "overall": {
+    "precision": 0.8614718614718615,
+    "recall": 0.9045454545454545,
+    "f1": 0.8824833702882483,
+    "tp": 1194,
+    "fp": 192,
+    "fn": 126,
+    "support": 1320
+  },
+  "per_label": {
+    "condition": {
+      "precision": 0.751937984496124,
+      "recall": 0.8083333333333333,
+      "f1": 0.7791164658634538,
+      "tp": 97,
+      "fp": 32,
+      "fn": 23,
+      "support": 120
+    },
+    "organization medical facility": {
+      "precision": 0.9173553719008265,
+      "recall": 0.925,
+      "f1": 0.921161825726141,
+      "tp": 111,
+      "fp": 10,
+      "fn": 9,
+      "support": 120
+    },
+    "gender identity": {
+      "precision": 0.8666666666666667,
+      "recall": 0.8666666666666667,
+      "f1": 0.8666666666666667,
+      "tp": 104,
+      "fp": 16,
+      "fn": 16,
+      "support": 120
+    },
+    "lab result or test finding": {
+      "precision": 0.8074074074074075,
+      "recall": 0.9083333333333333,
+      "f1": 0.8549019607843137,
+      "tp": 109,
+      "fp": 26,
+      "fn": 11,
+      "support": 120
+    },
+    "location address": {
+      "precision": 0.8512396694214877,
+      "recall": 0.8583333333333333,
+      "f1": 0.8547717842323651,
+      "tp": 103,
+      "fp": 18,
+      "fn": 17,
+      "support": 120
+    },
+    "medication, drug, or prescription": {
+      "precision": 0.9130434782608695,
+      "recall": 0.875,
+      "f1": 0.8936170212765957,
+      "tp": 105,
+      "fp": 10,
+      "fn": 15,
+      "support": 120
+    },
+    "name": {
+      "precision": 0.8863636363636364,
+      "recall": 0.975,
+      "f1": 0.9285714285714286,
+      "tp": 117,
+      "fp": 15,
+      "fn": 3,
+      "support": 120
+    },
+    "medical procedure or test performed": {
+      "precision": 0.6690140845070423,
+      "recall": 0.7916666666666666,
+      "f1": 0.7251908396946565,
+      "tp": 95,
+      "fp": 47,
+      "fn": 25,
+      "support": 120
+    },
+    "name medical professional": {
+      "precision": 0.959349593495935,
+      "recall": 0.9833333333333333,
+      "f1": 0.9711934156378601,
+      "tp": 118,
+      "fp": 5,
+      "fn": 2,
+      "support": 120
+    },
+    "sex assigned at birth": {
+      "precision": 0.9508196721311475,
+      "recall": 0.9666666666666667,
+      "f1": 0.9586776859504132,
+      "tp": 116,
+      "fp": 6,
+      "fn": 4,
+      "support": 120
+    },
+    "personal identifier number": {
+      "precision": 0.9444444444444444,
+      "recall": 0.9916666666666667,
+      "f1": 0.967479674796748,
+      "tp": 119,
+      "fp": 7,
+      "fn": 1,
+      "support": 120
+    }
+  },
+  "metadata": {
+    "model": "/content/drive/MyDrive/Holokai_Project/final_model/outputs/training/best_model",
+    "data": "/content/drive/MyDrive/Holokai_Project/finetune/data/corpus_V4_gliner_mapping.json",
+    "data_sha256": "ba40da69601298e626a3e748640bf1787c541b56a63871161e4e2044bda39be6",
+    "threshold": 0.4,
+    "label_schema": "recommended",
+    "labels": [
+      "condition",
+      "organization medical facility",
+      "gender identity",
+      "lab result or test finding",
+      "location address",
+      "medication, drug, or prescription",
+      "name",
+      "medical procedure or test performed",
+      "name medical professional",
+      "sex assigned at birth",
+      "personal identifier number"
+    ],
+    "label_mapping": {
+      "diagnosis": "condition",
+      "facility": "organization medical facility",
+      "gender identity": "gender identity",
+      "lab result": "lab result or test finding",
+      "location address": "location address",
+      "medication": "medication, drug, or prescription",
+      "person": "name",
+      "procedure": "medical procedure or test performed",
+      "provider": "name medical professional",
+      "sex": "sex assigned at birth",
+      "unique identifier": "personal identifier number"
+    },
+    "label_to_original": {
+      "condition": "diagnosis",
+      "organization medical facility": "facility",
+      "gender identity": "gender identity",
+      "lab result or test finding": "lab result",
+      "location address": "location address",
+      "medication, drug, or prescription": "medication",
+      "name": "person",
+      "medical procedure or test performed": "procedure",
+      "name medical professional": "provider",
+      "sex assigned at birth": "sex",
+      "personal identifier number": "unique identifier"
+    },
+    "sample_count": 648,
+    "device": "cuda",
+    "batch_size": 8,
+    "flat_ner": false,
+    "multi_label": false,
+    "matching": "exact inclusive token start/end + exact label within sample",
+    "averaging": "micro",
+    "zero_division": 0,
+    "duplicate_predictions": "extra occurrences count as FP",
+    "gliner_version": "0.2.29",
+    "torch_version": "2.11.0+cu130",
+    "created_at_utc": "2026-10-09T19:22:03.853602+00:00"
+  }
+}

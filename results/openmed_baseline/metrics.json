@@ -1,0 +1,465 @@
+{
+  "model_id": "OpenMed/OpenMed-PII-BioClinicalModern-Large-395M-v1",
+  "revision": "049686c0e4b42f052578dc056b2cc3fa2f9e27eb",
+  "mode": "pretrained NER inference only; original head unchanged",
+  "data": {
+    "validation": {
+      "path": "/content/drive/MyDrive/Holokai_Project/week8/Holokai_Option_B_Annotation_Files/val_gliner_mapping_option_B.json",
+      "sha256": "ce5f2be09715281f08abff6c9d464c967e9530e0bd877fcfc0da50a39253c146",
+      "records": 171
+    }
+  },
+  "labels": [
+    "condition",
+    "organization medical facility",
+    "gender identity",
+    "lab result or test finding",
+    "location address",
+    "medication, drug, or prescription",
+    "name",
+    "medical procedure or test performed",
+    "name medical professional",
+    "sex assigned at birth",
+    "personal identifier number"
+  ],
+  "native_id2label": {
+    "0": "O",
+    "1": "B-account_number",
+    "2": "B-age",
+    "3": "B-api_key",
+    "4": "B-bank_routing_number",
+    "5": "B-biometric_identifier",
+    "6": "B-blood_type",
+    "7": "B-certificate_license_number",
+    "8": "B-city",
+    "9": "B-company_name",
+    "10": "B-coordinate",
+    "11": "B-country",
+    "12": "B-county",
+    "13": "B-credit_debit_card",
+    "14": "B-customer_id",
+    "15": "B-cvv",
+    "16": "B-date",
+    "17": "B-date_of_birth",
+    "18": "B-date_time",
+    "19": "B-device_identifier",
+    "20": "B-education_level",
+    "21": "B-email",
+    "22": "B-employee_id",
+    "23": "B-employment_status",
+    "24": "B-fax_number",
+    "25": "B-first_name",
+    "26": "B-gender",
+    "27": "B-health_plan_beneficiary_number",
+    "28": "B-http_cookie",
+    "29": "B-ipv4",
+    "30": "B-ipv6",
+    "31": "B-language",
+    "32": "B-last_name",
+    "33": "B-license_plate",
+    "34": "B-mac_address",
+    "35": "B-medical_record_number",
+    "36": "B-occupation",
+    "37": "B-password",
+    "38": "B-phone_number",
+    "39": "B-pin",
+    "40": "B-political_view",
+    "41": "B-postcode",
+    "42": "B-race_ethnicity",
+    "43": "B-religious_belief",
+    "44": "B-sexuality",
+    "45": "B-ssn",
+    "46": "B-state",
+    "47": "B-street_address",
+    "48": "B-swift_bic",
+    "49": "B-tax_id",
+    "50": "B-time",
+    "51": "B-unique_id",
+    "52": "B-url",
+    "53": "B-user_name",
+    "54": "B-vehicle_identifier",
+    "55": "I-account_number",
+    "56": "I-api_key",
+    "57": "I-biometric_identifier",
+    "58": "I-blood_type",
+    "59": "I-certificate_license_number",
+    "60": "I-city",
+    "61": "I-company_name",
+    "62": "I-coordinate",
+    "63": "I-country",
+    "64": "I-county",
+    "65": "I-credit_debit_card",
+    "66": "I-customer_id",
+    "67": "I-date",
+    "68": "I-date_of_birth",
+    "69": "I-date_time",
+    "70": "I-device_identifier",
+    "71": "I-education_level",
+    "72": "I-email",
+    "73": "I-employee_id",
+    "74": "I-employment_status",
+    "75": "I-fax_number",
+    "76": "I-first_name",
+    "77": "I-gender",
+    "78": "I-health_plan_beneficiary_number",
+    "79": "I-http_cookie",
+    "80": "I-ipv4",
+    "81": "I-ipv6",
+    "82": "I-language",
+    "83": "I-last_name",
+    "84": "I-license_plate",
+    "85": "I-mac_address",
+    "86": "I-medical_record_number",
+    "87": "I-occupation",
+    "88": "I-password",
+    "89": "I-phone_number",
+    "90": "I-pin",
+    "91": "I-political_view",
+    "92": "I-postcode",
+    "93": "I-race_ethnicity",
+    "94": "I-religious_belief",
+    "95": "I-sexuality",
+    "96": "I-ssn",
+    "97": "I-state",
+    "98": "I-street_address",
+    "99": "I-swift_bic",
+    "100": "I-tax_id",
+    "101": "I-time",
+    "102": "I-unique_id",
+    "103": "I-url",
+    "104": "I-user_name",
+    "105": "I-vehicle_identifier"
+  },
+  "mapping": {
+    "first_name": "name",
+    "last_name": "name",
+    "street_address": "location address",
+    "city": "location address",
+    "county": "location address",
+    "state": "location address",
+    "country": "location address",
+    "postcode": "location address",
+    "ssn": "personal identifier number",
+    "unique_id": "personal identifier number",
+    "employee_id": "personal identifier number",
+    "customer_id": "personal identifier number",
+    "medical_record_number": "personal identifier number",
+    "health_plan_beneficiary_number": "personal identifier number",
+    "certificate_license_number": "personal identifier number",
+    "tax_id": "personal identifier number",
+    "blood_type": "lab result or test finding"
+  },
+  "label_coverage": {
+    "condition": {
+      "status": "unsupported",
+      "native_labels": [],
+      "reason": "No native diagnosis or symptom label."
+    },
+    "organization medical facility": {
+      "status": "unsupported",
+      "native_labels": [],
+      "reason": "Generic company_name does not identify medical facilities."
+    },
+    "gender identity": {
+      "status": "unsupported",
+      "native_labels": [],
+      "reason": "Generic gender cannot reliably identify gender identity."
+    },
+    "lab result or test finding": {
+      "status": "partial",
+      "native_labels": [
+        "blood_type"
+      ],
+      "reason": "Blood type only; other lab findings and vital signs are unsupported."
+    },
+    "location address": {
+      "status": "partial",
+      "native_labels": [
+        "city",
+        "country",
+        "county",
+        "postcode",
+        "state",
+        "street_address"
+      ],
+      "reason": "Address/geographic components; exact full-address boundaries can differ."
+    },
+    "medication, drug, or prescription": {
+      "status": "unsupported",
+      "native_labels": [],
+      "reason": "No native medication label."
+    },
+    "name": {
+      "status": "partial",
+      "native_labels": [
+        "first_name",
+        "last_name"
+      ],
+      "reason": "First/last name components; patient versus provider roles are not distinguished."
+    },
+    "medical procedure or test performed": {
+      "status": "unsupported",
+      "native_labels": [],
+      "reason": "No native procedure or test label."
+    },
+    "name medical professional": {
+      "status": "unsupported",
+      "native_labels": [],
+      "reason": "Generic first/last names do not distinguish clinical providers."
+    },
+    "sex assigned at birth": {
+      "status": "unsupported",
+      "native_labels": [],
+      "reason": "Generic gender does not establish sex assigned at birth."
+    },
+    "personal identifier number": {
+      "status": "partial",
+      "native_labels": [
+        "certificate_license_number",
+        "customer_id",
+        "employee_id",
+        "health_plan_beneficiary_number",
+        "medical_record_number",
+        "ssn",
+        "tax_id",
+        "unique_id"
+      ],
+      "reason": "Only the listed personal, clinical, and license ID subtypes."
+    }
+  },
+  "covered_target_labels": [
+    "lab result or test finding",
+    "location address",
+    "name",
+    "personal identifier number"
+  ],
+  "unsupported_target_labels": [
+    "condition",
+    "organization medical facility",
+    "gender identity",
+    "medication, drug, or prescription",
+    "medical procedure or test performed",
+    "name medical professional",
+    "sex assigned at birth"
+  ],
+  "label_coverage_fraction": 0.36363636363636365,
+  "unmapped_native_labels": [
+    "account_number",
+    "age",
+    "api_key",
+    "bank_routing_number",
+    "biometric_identifier",
+    "company_name",
+    "coordinate",
+    "credit_debit_card",
+    "cvv",
+    "date",
+    "date_of_birth",
+    "date_time",
+    "device_identifier",
+    "education_level",
+    "email",
+    "employment_status",
+    "fax_number",
+    "gender",
+    "http_cookie",
+    "ipv4",
+    "ipv6",
+    "language",
+    "license_plate",
+    "mac_address",
+    "occupation",
+    "password",
+    "phone_number",
+    "pin",
+    "political_view",
+    "race_ethnicity",
+    "religious_belief",
+    "sexuality",
+    "swift_bic",
+    "time",
+    "url",
+    "user_name",
+    "vehicle_identifier"
+  ],
+  "ignored_native_prediction_counts": {
+    "user_name": 10,
+    "occupation": 30,
+    "date": 25,
+    "company_name": 25,
+    "education_level": 7,
+    "date_of_birth": 17,
+    "time": 9,
+    "race_ethnicity": 13,
+    "biometric_identifier": 7,
+    "age": 7,
+    "credit_debit_card": 3,
+    "pin": 2,
+    "url": 9,
+    "email": 10,
+    "vehicle_identifier": 2,
+    "license_plate": 2,
+    "language": 4,
+    "phone_number": 5,
+    "date_time": 3,
+    "ipv4": 1,
+    "ipv6": 1,
+    "password": 2,
+    "gender": 36,
+    "religious_belief": 4,
+    "coordinate": 1,
+    "political_view": 1,
+    "fax_number": 2,
+    "api_key": 1,
+    "device_identifier": 1,
+    "employment_status": 2,
+    "swift_bic": 1,
+    "sexuality": 3
+  },
+  "evaluation_policy": "Exact inclusive word-span and label; micro overall across all 11 labels. Unsupported gold entities count as FN. Native out-of-schema predictions are ignored and retained for audit.",
+  "merge_policy": "Adjacent mapped name components; adjacent address components or components separated only by one/two commas. No gold-dependent rules.",
+  "annotation_status": "Option B automated, unverified additions",
+  "max_subtokens": 193,
+  "batch_size": 8,
+  "precision": "float32",
+  "model_frozen_verified": true,
+  "gpu": "NVIDIA L4",
+  "environment": {
+    "torch": "2.11.0+cu130",
+    "transformers": "4.53.3",
+    "onnx": "1.18.0",
+    "onnxruntime": "1.22.1"
+  },
+  "validation": {
+    "overall": {
+      "tp": 123,
+      "fp": 81,
+      "fn": 387,
+      "precision": 0.6029411764705882,
+      "recall": 0.2411764705882353,
+      "f1": 0.3445378151260504
+    },
+    "per_label": {
+      "condition": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 120,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "organization medical facility": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 9,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "gender identity": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 24,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "lab result or test finding": {
+        "tp": 9,
+        "fp": 0,
+        "fn": 37,
+        "precision": 1.0,
+        "recall": 0.1956521739130435,
+        "f1": 0.32727272727272727
+      },
+      "location address": {
+        "tp": 13,
+        "fp": 39,
+        "fn": 9,
+        "precision": 0.25,
+        "recall": 0.5909090909090909,
+        "f1": 0.35135135135135137
+      },
+      "medication, drug, or prescription": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 59,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "name": {
+        "tp": 67,
+        "fp": 39,
+        "fn": 5,
+        "precision": 0.6320754716981132,
+        "recall": 0.9305555555555556,
+        "f1": 0.7528089887640449
+      },
+      "medical procedure or test performed": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 62,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "name medical professional": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 30,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "sex assigned at birth": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 21,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "personal identifier number": {
+        "tp": 34,
+        "fp": 3,
+        "fn": 11,
+        "precision": 0.918918918918919,
+        "recall": 0.7555555555555555,
+        "f1": 0.8292682926829268
+      }
+    }
+  },
+  "onnx": {
+    "verified": true,
+    "opset": 17,
+    "provider": "CPUExecutionProvider",
+    "atol": 0.001,
+    "rtol": 0.001,
+    "checks": [
+      {
+        "batch_size": 1,
+        "sequence_length": 14,
+        "max_abs_error": 6.866455078125e-05,
+        "identical_tags_entities": true
+      },
+      {
+        "batch_size": 2,
+        "sequence_length": 193,
+        "max_abs_error": 0.0001697540283203125,
+        "identical_tags_entities": true
+      },
+      {
+        "batch_size": 3,
+        "sequence_length": 176,
+        "max_abs_error": 0.000164031982421875,
+        "identical_tags_entities": true
+      }
+    ],
+    "full_validation_records": 171,
+    "full_validation_mapped_predictions_identical": true,
+    "full_validation_native_tag_differences": 0,
+    "sha256": "be9e98deafdf0ed7b2269377c4b0987df1cb14d8a8a74ddad8e29c88808dc7bd",
+    "bytes": 1584632136
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "run05_lr4e-5_ep8",
+  "learning_rate": 4e-05,
+  "epochs": 8,
+  "seed": 42,
+  "batch_size": 1,
+  "gradient_accumulation_steps": 16,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "max_grad_norm": 1,
+  "gradient_checkpointing": true
+}

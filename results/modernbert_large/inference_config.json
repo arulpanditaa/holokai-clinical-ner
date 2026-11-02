@@ -1,0 +1,39 @@
+{
+  "model_id": "answerdotai/ModernBERT-large",
+  "revision": "45bb4654a4d5aaff24dd11d4781fa46d39bf8c13",
+  "tags": [
+    "O",
+    "B-condition",
+    "I-condition",
+    "B-organization medical facility",
+    "I-organization medical facility",
+    "B-gender identity",
+    "I-gender identity",
+    "B-lab result or test finding",
+    "I-lab result or test finding",
+    "B-location address",
+    "I-location address",
+    "B-medication, drug, or prescription",
+    "I-medication, drug, or prescription",
+    "B-name",
+    "I-name",
+    "B-medical procedure or test performed",
+    "I-medical procedure or test performed",
+    "B-name medical professional",
+    "I-name medical professional",
+    "B-sex assigned at birth",
+    "I-sex assigned at birth",
+    "B-personal identifier number",
+    "I-personal identifier number"
+  ],
+  "inputs": {
+    "input_ids": "int64 [batch, sequence]",
+    "attention_mask": "int64 [batch, sequence]"
+  },
+  "output": "float32 logits [batch, sequence, 23]",
+  "max_sequence_length": 8192,
+  "preprocessing": "AutoTokenizer.from_pretrained(this_directory); is_split_into_words=True; no truncation",
+  "postprocessing": "Take first subtoken per original word, argmax; train_eval.decode; inclusive token offsets",
+  "orphan_I_policy": "start a new entity",
+  "onnx_opset": 17
+}

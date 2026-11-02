@@ -1,0 +1,43 @@
+{
+  "fixed_result": "/content/drive/MyDrive/Holokai_Project/final_model/outputs/v4_test/metrics.json",
+  "per_label_result": "/content/drive/MyDrive/Holokai_Project/final_model/outputs/v4_test_per_label/metrics.json",
+  "thresholds_sha256": "fc07c142b5ccdda5c363cde1f81436250b4806b8d846e1d0456e4a04d5b404e9",
+  "comparison": [
+    {
+      "metric": "precision",
+      "fixed_0_40": 0.8614718614718615,
+      "validation_selected_per_label": 0.8715867158671586,
+      "change_per_label_minus_fixed": 0.010114854395297135
+    },
+    {
+      "metric": "recall",
+      "fixed_0_40": 0.9045454545454545,
+      "validation_selected_per_label": 0.8946969696969697,
+      "change_per_label_minus_fixed": -0.009848484848484884
+    },
+    {
+      "metric": "f1",
+      "fixed_0_40": 0.8824833702882483,
+      "validation_selected_per_label": 0.8829906542056075,
+      "change_per_label_minus_fixed": 0.0005072839173592136
+    },
+    {
+      "metric": "tp",
+      "fixed_0_40": 1194,
+      "validation_selected_per_label": 1181,
+      "change_per_label_minus_fixed": -13
+    },
+    {
+      "metric": "fp",
+      "fixed_0_40": 192,
+      "validation_selected_per_label": 174,
+      "change_per_label_minus_fixed": -18
+    },
+    {
+      "metric": "fn",
+      "fixed_0_40": 126,
+      "validation_selected_per_label": 139,
+      "change_per_label_minus_fixed": 13
+    }
+  ]
+}

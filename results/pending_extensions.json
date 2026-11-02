@@ -1,0 +1,14 @@
+[
+  {
+    "name": "finetune_run3_b2_lr2e-5_ep14",
+    "batch_size": 2,
+    "learning_rate": 2e-05,
+    "epochs": 14
+  },
+  {
+    "name": "finetune_run3_b2_lr4.5e-5_ep11",
+    "batch_size": 2,
+    "learning_rate": 4.5e-05,
+    "epochs": 11
+  }
+]

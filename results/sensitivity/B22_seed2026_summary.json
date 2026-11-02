@@ -1,0 +1,15 @@
+{
+  "experiment": "B22_seed2026",
+  "seed": 2026,
+  "learning_rate": 0.00012,
+  "batch_size": 16,
+  "epochs": 8,
+  "weight_decay": 0.01,
+  "best_epoch": 6,
+  "best_validation_f1": 0.8703703703703703,
+  "best_validation_precision": 0.815028901734104,
+  "best_validation_recall": 0.9337748344370861,
+  "best_validation_tp": 423,
+  "best_validation_fp": 96,
+  "best_validation_fn": 30
+}

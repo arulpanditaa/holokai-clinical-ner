@@ -1,0 +1,27 @@
+{
+  "experiment": "B22_random_seed_variation",
+  "base_model": "knowledgator/gliner-pii-base-v1.0",
+  "learning_rate": 0.00012,
+  "batch_size": 16,
+  "epochs": 8,
+  "weight_decay": 0.01,
+  "validation_f1_by_seed": {
+    "42": 0.9068,
+    "7": 0.889831,
+    "123": 0.8745980707395499,
+    "2026": 0.8703703703703703,
+    "99": 0.8919202518363064
+  },
+  "score_sources": {
+    "42": "Teammate's original B22 result (rounded to 90.68%)",
+    "7": "Earlier seed-7 replication result",
+    "123": "Saved experiment summary",
+    "2026": "Saved experiment summary",
+    "99": "Saved experiment summary"
+  },
+  "mean_f1": 0.8867039385892453,
+  "sample_std_f1": 0.014613158525262892,
+  "min_f1": 0.8703703703703703,
+  "max_f1": 0.9068,
+  "range_f1": 0.0364296296296297
+}
